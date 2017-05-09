@@ -1,0 +1,47 @@
+{% extends "base2.html" %}
+    <title>
+      {% block title %}Best Burger: American Food{% endblock %}
+    </title>
+
+{% block body %}
+  <div class="container">
+    <div class=".col-xs-12 text-center">
+        <h2>American Food!</h2>
+    </div>
+    <div class="row text-center">
+      <div class="col-xs-4"><h3>Char-Broiled Burgers!</h3>
+        <ul>
+          <li>Double Cheeseburger</li>
+          <li>Bacon Cheeseburger</li>
+          <li>Chili Cheeseburger</li>
+        </ul>
+      </div>
+      <div class="col-xs-4"><h3>Chicken Stuff!</h3>
+        <ul>
+          <li>Chicken Tenders</li>
+          <li>Chicken Club Sandwich</li>
+          <li>Chicken Salad</li>
+        </ul>
+      </div>
+      <div class="col-xs-4"><h3>Classic Cafeteria!</h3>
+        <ul>
+          <li>Fried Burrito</li>
+          <li>Chili-Cheese Fries</li>
+          <li>Corn Dog</li>
+       </ul>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="row text-center">
+      <div class="col-xs-6">
+        <img class="img-responsive center-block" src="../static/bestburgerfries.jpg"
+        width="330" height="247.5">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-responsive center-block" src="../static/cheaphamburgersinhouston.jpg"
+        width="330" height="247.5">
+      </div>
+      <hr/>
+    </div>
+  </div>
+{% endblock %}

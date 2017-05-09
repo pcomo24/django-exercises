@@ -1,0 +1,52 @@
+{% extends "base2.html" %}
+    <title>
+      {% block title %}Best Burger Homepage{% endblock %}
+    </title>
+
+{% block body %}
+  <div class="container">
+    <div class="col-xs-12 text-center">
+        <h1>THIS IS THE OFFICIAL BEST BURGER WEBSITE!!<br>DON’T MESS WITH THE
+          REST… GO TO THE BEST!!!</h1>
+        <hr/>
+    </div>
+    <div class=".col-xs-12 text-center">
+        <h2>WHY YOU WANNA EAT HERE?</h2>
+    </div>
+    <div class="row text-center">
+      <div class="col-xs-4"><h3>American Food</h3>
+        <ul>
+          <li>Char-Broiled Burgers</li>
+          <li>Fried Fries</li>
+          <li>Chili and Cheese</li>
+        </ul>
+      </div>
+      <div class="col-xs-4"><h3>Chinese Food</h3>
+        <ul>
+          <li>Chicken Fried Rice</li>
+          <li>Pork Fried Rice</li>
+          <li>Rice Fried Rice</li>
+        </ul>
+      </div>
+      <div class="col-xs-4"><h3>Drinks</h3>
+        <ul>
+          <li>Coke Fountain</li>
+          <li>Domestic and Import Beers</li>
+          <li>Box Wine</li>
+       </ul>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="row text-center">
+      <div class="col-xs-6">
+        <img class="img-responsive center-block" src="../static/bestburgerfries.jpg"
+        width="330" height="247.5">
+      </div>
+      <div class="col-xs-6">
+        <img class="img-responsive center-block" src="../static/cheaphamburgersinhouston.jpg"
+        width="330" height="247.5">
+      </div>
+      <hr/>
+    </div>
+  </div>
+{% endblock %}
