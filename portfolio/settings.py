@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '104.238.146.151',
-    'localhost'
+    'localhost',
+    'burger.paulrcomo.com'
 ]
 
 
