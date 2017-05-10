@@ -4,3 +4,6 @@ def homepage (request):
 
 def american (request):
   return TemplateResponse(request, 'american.html', {})
+
+def hello (request):
+  return TemplateResponse(request, 'hello.html', {})
