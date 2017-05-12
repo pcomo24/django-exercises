@@ -1,0 +1,15 @@
+{% extends "base2.html" %}
+
+{% block body %}
+{{ blog.name }}
+
+
+<ul>
+  {% for post in posts %}
+  <li>
+    <a href="./{{ post.slug }}">
+    {{ post.title }}: {{ post.created }}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

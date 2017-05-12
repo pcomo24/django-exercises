@@ -1,0 +1,10 @@
+{% extends "base2.html" %}
+
+{% block body %}
+<ul>
+{% for answer in choices %}
+  <li>{{ answer}}: {{ vote_count }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

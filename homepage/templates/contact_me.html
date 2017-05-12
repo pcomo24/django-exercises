@@ -1,0 +1,23 @@
+{% extends "base2.html" %}
+
+{% block body %}
+<br><br><br>
+<h1>E-Mail Me</h2>
+
+<form action="/contact_me" method="POST">
+  {% csrf_token %}
+  <label>Name</label>
+  <br>
+  <input type="text" name="your_name">
+  <br>
+  <label>E-Mail</label>
+  <br>
+  <input type="email" name="your_email">
+  <br>
+  <label>Message:</label>
+  <br>
+  <textarea rows="4" cols="18" name="your_message"></textarea>
+  <br>
+  <input type="submit">
+
+{% endblock %}

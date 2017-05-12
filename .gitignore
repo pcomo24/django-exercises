@@ -90,3 +90,4 @@ ENV/
 
 #secrets stuff
 SECRETS.ENV
+db.sqlite3
