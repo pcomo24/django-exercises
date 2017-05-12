@@ -4,6 +4,10 @@ from django.template.response import TemplateResponse
 
 from blog.models import Blog, Post, Poll, Choice
 
+#tag = request.GET.get('tag', '')
+#if tag:
+#    post = posts.filter(tags__slug=tag)
+
 def blog_index (request, blog_slug):
     blog = get_object_or_404(Blog, slug=blog_slug)
     posts = Post.objects.filter(blog=blog)
@@ -31,3 +35,9 @@ def poll_item (request, poll_slug):
         'choices': choices,
     }
     return TemplateResponse(request, 'poll.html', context)
+
+def poll_results (request, poll_slug, result_slug):
+    poll = get_object_or_404(Poll)
+    votes = get_object_or_404(Choice, vote_count)
+
+    return TemplateResponse(request, 'poll_results.html', context)

@@ -2,6 +2,14 @@
 
 {% block body %}
 {{ blog.name }} - {{ post.blog.name }}
-{{ posts.title }}
+<h1>{{ posts.title }}</h1>
 {{ posts.blog }}
+<ul>
+  {% for tag in post.tags.all %}
+  <li>
+      {{ tag.name }}
+  </li>
+  {% endfor %}
+</ul>
+
 {% endblock %}
